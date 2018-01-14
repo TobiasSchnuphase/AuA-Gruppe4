@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Ueberfuehrungstabelle" name="Ueberfuehrungstabelle" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="genretabelle" name="API-Genre ueberfuehren">
+    <extensionElements>
+      <biodi:bounds x="200" y="200" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable" hitPolicy="COLLECT">
+      <input id="input1" label="Genre" camunda:inputVariable="">
+        <inputExpression id="inputExpression1" typeRef="string">
+          <text>genreSelect</text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="API-Genre" name="apigenre" typeRef="integer" />
+      <rule id="row-252817592-1">
+        <description><![CDATA[Family ( <- Zahlen stehen in API fuer)]]></description>
+        <inputEntry id="UnaryTests_1oy7j8c">
+          <text><![CDATA["Kinder-Familie-Animation"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1t34915">
+          <text>10751</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-2">
+        <description>Animation</description>
+        <inputEntry id="UnaryTests_0qufy9i">
+          <text><![CDATA["Kinder-Familie-Animation"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wpujkt">
+          <text>16</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-3">
+        <description>Documentary</description>
+        <inputEntry id="UnaryTests_1ks5m43">
+          <text><![CDATA["Dokumentarfilm"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bw789q">
+          <text>99</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-4">
+        <description>History</description>
+        <inputEntry id="UnaryTests_1c3rd5w">
+          <text><![CDATA["Dokumentarfilm"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jj7mln">
+          <text>36</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-5">
+        <description>Comedy</description>
+        <inputEntry id="UnaryTests_0gkbist">
+          <text><![CDATA["Komoedie"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09273pw">
+          <text>35</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-6">
+        <description>Crime</description>
+        <inputEntry id="UnaryTests_116zo6l">
+          <text><![CDATA["Krimi"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12grm09">
+          <text>80</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-7">
+        <description>Science Fiction</description>
+        <inputEntry id="UnaryTests_0xt3ea9">
+          <text><![CDATA["Science Fiction"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10cf06p">
+          <text>878</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-8">
+        <description>Drama</description>
+        <inputEntry id="UnaryTests_05ch5wf">
+          <text><![CDATA["Drama"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11og9ou">
+          <text>18</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-9">
+        <description>Romance</description>
+        <inputEntry id="UnaryTests_1508xo3">
+          <text><![CDATA["Romance"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0yog1tw">
+          <text>10749</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-10">
+        <description>Horror</description>
+        <inputEntry id="UnaryTests_0vfgqac">
+          <text><![CDATA["Horror-Thriller"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07dx61d">
+          <text>27</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-11">
+        <description>Thriller</description>
+        <inputEntry id="UnaryTests_19lhivp">
+          <text><![CDATA["Horror-Thriller"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gdco31">
+          <text>53</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-12">
+        <description>Action</description>
+        <inputEntry id="UnaryTests_1pwe0cp">
+          <text><![CDATA["Action"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sck0qn">
+          <text>28</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-252817592-13">
+        <description>Western</description>
+        <inputEntry id="UnaryTests_1bgf4la">
+          <text><![CDATA["Western"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r7wu5d">
+          <text>37</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
