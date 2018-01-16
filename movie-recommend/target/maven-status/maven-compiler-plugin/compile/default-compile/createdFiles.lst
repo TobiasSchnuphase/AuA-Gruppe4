@@ -1,8 +1,0 @@
-org\camunda\bpm\movie\movierecommend\API.class
-org\camunda\bpm\movie\movierecommend\MovieRecommendApplication.class
-org\camunda\bpm\movie\movierecommend\Movie.class
-org\camunda\bpm\movie\movierecommend\APIAbfrage.class
-org\camunda\bpm\movie\movierecommend\GoogleMail.class
-org\camunda\bpm\movie\movierecommend\Senden.class
-org\camunda\bpm\movie\movierecommend\GoogleMail$1.class
-org\camunda\bpm\movie\movierecommend\SchreibeDatei.class
